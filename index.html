@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTF Challenge - Hidden JS Logic</title>
+    <script>
+        // هنا يتم إخفاء العلم في كود الجافاسكريبت
+        function getFlag() {
+            const secret = "CTF{advanced_js_challenge}";
+            return secret;
+        }
+
+        // عند الضغط على الزر سيتم استدعاء دالة تخفي الرد
+        function fakeLogic() {
+            alert("Keep searching!");
+        }
+    </script>
+</head>
+<body>
+    <h1>Welcome to the Advanced CTF Challenge</h1>
+    <p>Can you find the flag?</p>
+    <button onclick="fakeLogic()">Click me!</button>
+</body>
+</html>
